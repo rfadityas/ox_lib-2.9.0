@@ -85,7 +85,7 @@ const ContextMenu: React.FC = () => {
     <Flex
       position="absolute"
       w="75%"
-      h="80%"
+      h="90%"
       justifyContent="flex-end"
       alignItems="center"
     >
@@ -95,12 +95,13 @@ const ContextMenu: React.FC = () => {
             {contextMenu.menu && (
               <Flex
                 borderRadius="md"
-                bg="gray.800"
+                bg="purple.700"
                 flex="1 15%"
                 alignSelf="stretch"
                 textAlign="center"
                 justifyContent="center"
                 alignItems="center"
+
                 marginRight={2}
                 p={2}
                 _hover={{ bg: "gray.700" }}
@@ -110,20 +111,20 @@ const ContextMenu: React.FC = () => {
                 <FontAwesomeIcon icon="chevron-left" />
               </Flex>
             )}
-            <Box borderRadius="md" bg="gray.800" flex="1 85%">
+            <Box borderRadius="md" bg="purple.700" flex="1 85%">
               <Text
                 fontFamily="Poppins"
                 fontSize="md"
+                fontWeight="medium"
                 p={2}
                 textAlign="center"
-                fontWeight="light"
               >
                 {contextMenu.title}
               </Text>
             </Box>
             <Flex
               borderRadius="md"
-              bg="gray.800"
+              bg="purple.700"
               flex="1 15%"
               alignSelf="stretch"
               textAlign="center"
@@ -131,7 +132,7 @@ const ContextMenu: React.FC = () => {
               alignItems="center"
               marginLeft={2}
               p={2}
-              _hover={{ bg: "gray.700" }}
+              _hover={{ bg: "purple.800" }}
               transition="300ms"
               onClick={() => closeContext()}
             >

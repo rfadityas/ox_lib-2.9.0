@@ -36,16 +36,18 @@ const Item: React.FC<{
       >
         <PopoverTrigger>
           <Box
-            bg="gray.800"
+            bg="rgba(10, 10, 10, 0.7)"
             borderRadius="md"
             h="fit-content"
+            borderLeftWidth={7}
+            borderLeftColor="purple.700"
             w="100%"
             p={2}
             mb={1}
             fontFamily="Poppins"
             fontSize="md"
             transition="300ms"
-            _hover={{ bg: "gray.700" }}
+            _hover={{ bg: "purple.700" }}
           >
             <Flex
               w="100%"
@@ -98,7 +100,7 @@ const Item: React.FC<{
               {(option[1].metadata || option[1].image) && (
                 <PopoverContent
                   fontFamily="Poppins"
-                  bg="gray.800"
+                  bg="purple.700"
                   outline="none"
                   border="none"
                   w="fit-content"

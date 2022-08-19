@@ -59,7 +59,7 @@ const Progressbar: React.FC = () => {
             height={45}
             bg="rgba(0, 0, 0, 0.6)"
             textAlign="center"
-            borderRadius="sm"
+            borderRadius="md"
             boxShadow="lg"
             overflow="hidden"
           >
@@ -69,24 +69,24 @@ const Progressbar: React.FC = () => {
               sx={
                 !cancelled
                   ? {
-                      width: "0%",
-                      backgroundColor: "green.400",
-                      animation: "progress-bar linear",
-                      animationDuration: `${duration}ms`,
-                    }
+                    width: "0%",
+                    backgroundColor: "purple.400",
+                    animation: "progress-bar linear",
+                    animationDuration: `${duration}ms`,
+                  }
                   : {
-                      // Currently unused
-                      width: "100%",
-                      animationPlayState: "paused",
-                      backgroundColor: "rgb(198, 40, 40)",
-                    }
+                    // Currently unused
+                    width: "100%",
+                    animationPlayState: "paused",
+                    backgroundColor: "rgb(198, 40, 40)",
+                  }
               }
             />
             <Text
-              fontFamily="Inter"
+              fontFamily="Poppins"
               isTruncated
-              fontSize={22}
-              fontWeight="light"
+              fontSize={15}
+              fontWeight="bold"
               position="absolute"
               top="50%"
               left="50%"
