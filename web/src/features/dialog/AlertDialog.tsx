@@ -65,19 +65,19 @@ const AlertDialog: React.FC = () => {
       >
         <AlertDialogOverlay />
         <AlertDialogContent fontFamily="Inter">
-          <AlertDialogHeader fontSize="lg" fontWeight="bold">
+          <AlertDialogHeader fontFamily="Poppins" fontSize={15} bg="purple.700" fontWeight="bold">
             {dialogData.header}
           </AlertDialogHeader>
-          <AlertDialogBody>
+          <AlertDialogBody bg="purple.900">
             <ReactMarkdown>{dialogData.content}</ReactMarkdown>
           </AlertDialogBody>
-          <AlertDialogFooter>
+          <AlertDialogFooter bg="purple.900">
             {dialogData.cancel && (
               <Button onClick={() => closeAlert("cancel")} mr={3}>
                 {locale.ui.cancel}
               </Button>
             )}
-            <Button colorScheme={dialogData.cancel ? "blue" : undefined} onClick={() => closeAlert("confirm")}>
+            <Button colorScheme={dialogData.cancel ? "gray" : undefined} onClick={() => closeAlert("confirm")}>
               {locale.ui.confirm}
             </Button>
           </AlertDialogFooter>
