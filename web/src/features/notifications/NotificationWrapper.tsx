@@ -67,8 +67,8 @@ const Notifications: React.FC = () => {
         data.type === "error"
           ? "circle-xmark"
           : data.type === "success"
-          ? "circle-check"
-          : "circle-info";
+            ? "circle-check"
+            : "circle-info";
     }
 
     toast({
